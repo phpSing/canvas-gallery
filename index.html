@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Uploader</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./init.js" type="module"></script>
+  </head>
+  <body>
+    <section class="image-uploader">
+      <div class="container-canvas">
+        <canvas id="canvas"></canvas>
+        <!-- <canvas id="canvas-annotation"></canvas> -->
+      </div>
+      <div class="container-action-panel">
+        <input
+          type="file"
+          id="upload"
+          name="upload"
+          accept="image/png, image/jpeg"
+          multiple="multiple"
+        />
+        <div class="gallery-container">
+          <div class="gallery-content"></div>
+          <div class="gallery-controls">
+            <button id="prev-button">Prev</button>
+            &nbsp;<span id="current-index">-</span>
+            &nbsp;of&nbsp;
+            <span id="total">-</span>&nbsp;
+            <button id="next-button">Next</button>
+          </div>
+        </div>
+        <ul class="annotation-list">
+          -
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

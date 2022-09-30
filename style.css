@@ -1,0 +1,85 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.image-uploader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* canvas area */
+.container-canvas {
+  flex: 3;
+  background-color: #eee;
+  overflow-y: hidden;
+}
+
+.container-canvas #canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.container-canvas #canvas-annotation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: white;
+}
+
+/* action panel */
+.container-action-panel {
+  flex: 1;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.container-action-panel #upload {
+}
+
+.gallery-container {
+  margin-top: 20px;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-content img {
+  cursor: pointer;
+  height: 100px;
+  margin-right: 10px;
+  border: 2px solid transparent;
+}
+
+.gallery-content img.selected {
+  border-color: lightblue;
+}
+
+.gallery-controls {
+  margin-top: 20px;
+}
+
+.annotation-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.annotation-list li {
+  font-size: 14px;
+}
+
+.annotation-list li a {
+  display: inline-block;
+  margin-left: 5px;
+  color: blue;
+  cursor: pointer;
+}
